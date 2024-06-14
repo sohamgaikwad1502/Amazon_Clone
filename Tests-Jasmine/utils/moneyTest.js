@@ -1,4 +1,4 @@
-import {moneyConvert} from '../js_files/utils/money.js';
+import {moneyConvert} from '../../js_files/utils/money.js';
 
 describe('test suite : formatCurrency',()=> {
     it('converts cents into dollars',()=> {
@@ -12,5 +12,6 @@ describe('test suite : formatCurrency',()=> {
     {
         expect(moneyConvert(2000.5)).toEqual('20.01');
     });
+    
 });
 
