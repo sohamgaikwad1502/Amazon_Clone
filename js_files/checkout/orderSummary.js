@@ -33,7 +33,9 @@ export function renderOrderSummary() {
         );
 
         cartSummaryHTML +=
-            `<div class="cart-item-container 
+            `<div class="
+            cart-item-container
+            cart-item-container-${matchingProduct.id} 
             js-product-id-${cartItem.productId}">
             <div class="delivery-date">
             Delivery Date : ${dateString}
@@ -50,14 +52,15 @@ export function renderOrderSummary() {
                 <div class="product-price">
                     $${moneyConvert(matchingProduct.priceCents)}
                 </div>
-                <div class="product-quantity">
+                <div class="product-quantity
+                js-product-quantity-${matchingProduct.id}">
                 <span>
                     Quantity: <span class="quantity-label">${cartItem.quantity}</span>
                 </span>
                 <span class="update-quantity-link link-primary">
                     Update
                 </span>
-                <span class="delete-quantity-link link-primary js-delete-link" 
+                <span class="delete-quantity-link link-primary js-delete-link js-delete-link-${matchingProduct.id}" 
                 data-product-id ="${cartItem.productId}">
                     Delete
                 </span>
@@ -83,11 +86,10 @@ export function renderOrderSummary() {
             const productId = link.dataset.productId;
     
             removeFromCart(productId);
-            console.log(productId);
-    
             const container = document.querySelector(`.js-product-id-${productId}`);
             container.remove();
             renderPaymentSummary();
+            console.log(cart);
     
         })
     });
@@ -101,6 +103,7 @@ export function renderOrderSummary() {
                 renderPaymentSummary();
             })
         })
+        console.log(cart);
 }
 
 
