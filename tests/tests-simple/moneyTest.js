@@ -1,4 +1,4 @@
-import {moneyConvert} from '../js_files/utils/money.js';
+import {moneyConvert} from '../../js_files/utils/money.js';
 
 if(moneyConvert(2000.5) === '20.01')  
 {
