@@ -65,8 +65,18 @@ class Clothing extends Product
     <a href='${this.sizeChartLink}' target="_blank">Size chart</a>
     `
   }
-
 }
+ 
+// const date = new Date() ;
+// console.log(date) ;
+
+/*
+const object2 = {
+  a : 4 ,
+  b : this.a
+}
+*/
+ 
 export const products = [
   {
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
