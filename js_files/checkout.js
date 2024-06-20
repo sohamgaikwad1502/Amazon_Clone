@@ -4,7 +4,7 @@ import { loadProducts } from '../data/products.js';
 // import '../data/cart-class.js';
 // import '../data/backend-practice.js';
 
-import { loadCart } from '../data/cart-class.js';
+import { loadCart } from '../data/cart.js';
 
 Promise.all(
     [
