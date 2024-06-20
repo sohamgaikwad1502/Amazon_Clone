@@ -4,8 +4,33 @@ import { loadProducts } from '../data/products.js';
 // import '../data/cart-class.js';
 // import '../data/backend-practice.js';
 
-loadProducts(() => 
+import { loadCart } from '../data/cart-class.js';
+
+Promise.all(
+    [
+        new Promise((resolve)=>
+        {   console.log('start promise')
+            loadProducts(()=> {
+                resolve();
+            })
+            console.log('finish loading')
+        }),
+
+        new Promise((resolve) => {
+            loadCart(()=>
+            {
+                resolve();
+            });
+        })
+            
+]).then(()=>
 {
     renderOrderSummary();
     renderPaymentSummary();
 });
+
+
+
+
+
+

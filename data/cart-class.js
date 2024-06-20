@@ -90,16 +90,21 @@ class Cart
           }
 }
 
+export function loadCart(fun)
+{
+  const xhr = new XMLHttpRequest();
+  xhr.addEventListener('load' , () => 
+  {
+    console.log(xhr.response);
+    fun()
+    
+  })
+  
+  xhr.open('GET', 'https://supersimplebackend.dev/cart');
+  xhr.send(); 
+}
+ 
 
-
-const cartl = new Cart('cart-oop') ;
-const business_cart = new Cart('cart-business');
-
-
-business_cart.addToCart('83d4ca15-0f35-48f5-b7a3-1ea210004f2e');
-
-console.log(cartl);
-console.log(business_cart);
 
 
 
