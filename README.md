@@ -1,11 +1,11 @@
 # Amazon Clone  
 
-A fully functional e-commerce website inspired by Amazon, built using **HTML**, **CSS**, and **JavaScript**.  
+A fully functional e-commerce website frontend inspired by Amazon, built using **HTML**, **CSS**, and **JavaScript**.  
 
-## Features  
-- User authentication and authorization  
-- Product listing and search functionality  
-- Shopping cart management and checkout process  
+## Features   
+- Product listing and add to cart functionality
+- Shopping cart management
+- Order Checkout page (Review Order and Order Summary) 
 - Order tracking and management  
 
 ## Installation  
@@ -13,11 +13,10 @@ A fully functional e-commerce website inspired by Amazon, built using **HTML**, 
     git clone https://github.com/sohamgaikwad1502/Amazon_Clone.git
     cd Amazon_Clone
    
-3. Open `amazon.html` in your browser to view the website.  
+3. Open `index.html` in your browser to view the website.  
 
 ## Technologies Used  
-- **Frontend:** HTML, CSS, JavaScript  
-- **Backend:** Node.js (if applicable)  
+- **Frontend:** HTML, CSS, JavaScript   
 
 ## Contributing  
 Contributions are welcome!  
@@ -25,10 +24,7 @@ Contributions are welcome!
 - Create a new branch (`git checkout -b feature-branch`)  
 - Commit your changes (`git commit -m 'Add new feature'`)  
 - Push to the branch (`git push origin feature-branch`)  
-- Open a pull request  
-
-## License  
-This project is licensed under the MIT License.  
+- Open a pull request   
 
 ## Acknowledgments  
 Inspired by the Amazon website. This project is for educational purposes only.  
